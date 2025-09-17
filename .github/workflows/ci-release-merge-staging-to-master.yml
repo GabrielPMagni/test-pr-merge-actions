@@ -53,7 +53,7 @@ jobs:
 
       - name: Install dependencies
         if: steps.branch_diff.outputs.needs_merge == 'true'
-        run: npm install --retry 3
+        run: npm install
 
       - name: Generate release version
         if: steps.branch_diff.outputs.needs_merge == 'true'
