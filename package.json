@@ -5,6 +5,9 @@
   "repository": "git@github.com:GabrielPMagni/test-pr-merge-actions.git",
   "author": "Gabriel Peres Magni <me@gpmagni.dev.br>",
   "license": "MIT",
+  "scripts": {
+    "release": "standard-version"
+  },
   "dependencies": {
     "standard-version": "^9.5.0"
   }
