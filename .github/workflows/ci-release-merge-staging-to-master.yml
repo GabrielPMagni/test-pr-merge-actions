@@ -43,7 +43,7 @@ jobs:
 
       - name: Merge staging into main
         if: steps.branch_diff.outputs.needs_merge == 'true'
-        run: git merge --ff-only origin/staging
+        run: git merge --no-ff origin/staging
 
       - name: Use Node.js 20
         if: steps.branch_diff.outputs.needs_merge == 'true'
@@ -64,7 +64,7 @@ jobs:
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com:GabrielPMagni/test-pr-merge-actions.git  # Update with your repo URL
+          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/GabrielPMagni/test-pr-merge-actions.git
           git push --follow-tags origin main
 
       - name: No merge required
