@@ -1,0 +1,11 @@
+{
+  "name": "test-pr-merge-actions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:GabrielPMagni/test-pr-merge-actions.git",
+  "author": "Gabriel Peres Magni <me@gpmagni.dev.br>",
+  "license": "MIT",
+  "dependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
