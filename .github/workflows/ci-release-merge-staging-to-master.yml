@@ -2,7 +2,7 @@ name: Merge staging into main weekly
 
 on:
   schedule:
-    - cron: '0 9 * * 1'
+    - cron: '*/6 * * * *'
   workflow_dispatch:
 
 permissions:
